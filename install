@@ -203,8 +203,13 @@ case ${codename} in
     omvCodename="shaitan"
     version=6
     ;;
+ bookworm)
+    keys="0E98404D386FA1D9 A48449044AAD5C5D"
+    omvCodename="shaitan"
+    version=6
+    ;;
   *)
-    _log "Unsupported version.  Only Debian 10 (Buster) and 11 (Bullseye) are supported.  Exiting..."
+    _log "Unsupported version.  Only Debian 10 (Buster) and 11 (Bullseye) and 12 (Bookworm) are supported.  Exiting..."
     exit 1
   ;;
 esac
